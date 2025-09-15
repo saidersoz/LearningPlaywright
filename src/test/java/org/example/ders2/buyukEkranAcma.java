@@ -20,6 +20,8 @@ public class buyukEkranAcma {
         Page page = browser.newPage();
         page.navigate("https://www.hepsiburada.com/");
 
+        String title = page.title();
+        System.out.println("Title: " + title);
         page.setViewportSize(weidt,height);
         page.close();
         browser.close();
