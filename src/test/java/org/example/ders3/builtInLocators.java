@@ -67,6 +67,12 @@ public class builtInLocators {
 
         Thread.sleep(2000);
 
+
+        //xpath Locator
+        Locator ContinueButton = page.locator("(//button[@data-testid='button'])[6]");
+        System.out.println("ContinueButton : " + ContinueButton.innerText());
+
+
         page.close();
         browser.close();
         playwright.close();
